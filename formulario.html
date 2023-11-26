@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+  <html lang="es">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>EJERCICIO FORMULARIO HTML</title>
+  </head>
+
+  <body>
+
+    <header>
+        <img src="img/logoutpl.png" alt="LOGO" width="50"> 
+    <span> Universidad Técnica Particular de Loja</span>
+    <img src="img/banderaloja.png" alt="baderade loja" width="50">
+     <hr>
+
+    <nav>
+        <ul>
+        <li> <a href="index.html">Inicio </a></li>
+        <li> <a href="errores.html">Errores </a></li>
+        <li> <a href="formulario.html">Formulario </a></li>
+        <li> <a href="galería.html">Galería </a></li>
+        <li> <a href="conferencia.html">Conferencia </a></li>
+        </ul>
+    </nav>
+    <hr>
+    </header>
+
+<section>
+  
+    <h1>FORMULARIO DE REGISTRO</h1>
+
+    <form action="https://www.utpl.edu.ec/" method="get">
+        <table>
+            <tr>
+                <td><label for="nombres">Nombres:</label></td>
+                <td><input type="text" id="nombres" name="nombres" required autofocus></td>
+            </tr>
+            <tr>
+                <td><label for="apellidos">Apellidos:</label></td>
+                <td><input type="text" id="apellidos" name="apellidos" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="web">Web:</label></td>
+                <td><input type="url" id="web" name="web" placeholder="URL de tu página web personal"></td>
+            </tr>
+            <tr>
+                <td><label for="fecha_registro">Fecha de Registro:</label></td>
+                <td><input type="date" id="fecha_registro" name="fecha_registro"></td>
+            </tr>
+            <tr>
+                <td><label for="hora">Hora:</label></td>
+                <td><input type="time" id="hora" name="hora"></td>
+            </tr>
+            <tr>
+                <td><label for="edad">Edad:</label></td>
+                <td><input type="number" id="edad" name="edad" onblur="validarEdad()" min="18" max="65"></td>
+            </tr>
+            <tr>
+                <td><label for="contacto">Contacto:</label></td>
+                <td><input type="tel" id="contacto" name="contacto"></td>
+            </tr>
+            <tr>
+                <td><label for="color_favorito">Color favorito:</label></td>
+                <td><select id="color_favorito" name="color_favorito">
+                    <option value="rojo">Rojo</option>
+                    <option value="verde">Verde</option>
+                    <option value="azul">Azul</option>
+                    <option value="amarillo">Amarillo</option>
+                    <option value="violeta">Violeta</option>
+                    <option value="gris">Gris</option>
+                    <option value="blanco">Blanco</option>
+                    <option value="negro">Negro</option>
+                    <option value="celeste">Celeste</option>
+                    
+                </select></td>
+            </tr>
+            <tr>
+                <td><label for="comentario">Comentario:</label></td>
+                <td><textarea id="comentario" name="comentario" rows="4" cols="50" placeholder="Escribe tu comentario aquí, no es obligatorio..."></textarea></td>
+            </tr>
+        </table>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+</section>
+
+<hr>
+<footer>
+    <h3>UTPL</h3>
+    <h5>La Universidad católica de Loja</h5>
+    <nav>
+    <a href="galería.html"> <h4>Galería</h4> </a>
+    </nav>
+    <h4>SESIONES Y REGISTRO</h4>
+    <ul>
+        <li>Conferencias</li>
+        <li>Formularios</li>
+    </ul>
+
+ 
+  <h4>CONTACTOS</h4>
+  <h5>Celular:</h5>
+  <span>0984435341</span>
+  <h5>Correo:</h5>
+  <span> rbagila@utpl.edu.ec</span>
+
+  <h5>Sugerencia</h5>
+  <a href="formulario.html">
+  <img src="img/buzon1.png" alt="Buzon de sugerencias" width="40">
+  </a>
+
+  <h5>Siguenos en:</h5>
+  <a href="https://www.facebook.com/" target="_blank">
+  <img src="img/facebook.png" alt="Red Social Facebook" width="20">
+  </a>
+
+  <a href="https://www.youtube.com/" target="_blank"> 
+  <img src="img/Youtube_logo.png" alt="canal de youtube" width="30">
+  </a>
+
+  <a href="https://www.instagram.com/" target="_blank">
+  <img src="img/insta.png" alt="Instagram" width="20">
+   </a>
+</footer>
+
+  </body>
+</html>
